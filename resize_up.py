@@ -131,5 +131,5 @@ def get_instance_status(instance_id):
         publish_to_sns(instance_id,msg)
         raise ("Instance state is unhealthy")
     else:
-        msg = ("Instance state is healthy")
+        msg = ("Instance state is healthy!")
         publish_to_sns(instance_id,msg)
